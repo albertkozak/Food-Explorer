@@ -1,17 +1,39 @@
 @charset "utf-8";
 
 // Place your Sass imports here...
+@import "../fontawesome/scss/fontawesome.scss";
+@import "../fontawesome/scss/solid.scss";
+@import "../fontawesome/scss/brands.scss";
+
+// Utility Imports
+@import 'variables';
+@import 'mixins';
+
+// Resets and Defaults
+@import 'reset';
+@import 'type'; //Font-Styling
+
+// HTML Partials
+@import 'body';
+@import 'header';
+@import 'hamburger';
+@import 'nav';
+@import 'main';
+@import 'sidebar';
+@import 'footer';
+// @import 'wrapper'; 
+
 
 // Google Fonts
 // font-family: 'Roboto Condensed', sans-serif;
 // font-family: 'Roboto', sans-serif;
 
-body{
-  background-color: green;
-}
+// .twitter {
+//   @extend %fa-icon;
+//   @extend .fab;
 
-h1 {
-  color: purple;
-}
-
+//   &:before {
+//     content: fa-content($fa-var-twitter);
+//   }
+// }
 
