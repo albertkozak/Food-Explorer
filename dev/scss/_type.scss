@@ -16,8 +16,14 @@
 
 body {
   font-family: $font-regular;
-  font-weight: lighter;
 }
-h1, h2, h3 {
-  font-family: $font-regular;
+
+h1, h2, h3, h4{
+  font-family: $font-condensed;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 1em;
 }

@@ -2,40 +2,63 @@
 //Sidebar Containers
 section {
   background-color: $sidebar-color1;
-  max-height: $sidebar-section-height;
+  margin: 10px 0;
+  // max-height: $sidebar-section-height;
+  min-width: 280px;
 }
+
 //Sidebar Container Headers
 section h3 {
   background-color: $brand-nav-color;
-  color: $sidebar-color1;
-  font-size: 2em;
-  text-transform: uppercase;
+  color: $text-with-brand-color;
+  font-size: 1.5em;
+  line-height: 50px;
+  padding-left: 5px;
 }
+
 // Recipies Container
 .recipes div {
   display: flex;
 }
 .recipes div:nth-child(odd) {
-  background-color: $sidebar-color1;
-}
-.recipes div:nth-child(even) {
   background-color: $sidebar-color2;
 }
+.recipes div:nth-child(even) {
+  background-color: $sidebar-color1;
+}
+
+.recipes img {
+  border: 2px solid $brand-color;
+  margin: 10px;
+}
+
+.recipes h4 {
+  margin: auto 0;
+  color: $standard-text-color;
+}
+
 // Cuisines Container
 .cuisines ul {
-  border: 1px red solid;
+  padding-top: 15px;
   display: flex;
-  // flex-flow: column wrap;
   flex-wrap: wrap;
   max-height: $sidebar-section-height;
 }
 .cuisines li {
   list-style: none;
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   flex: 0 0 140px;
-  border: 1px solid red;
+  padding-left: 10px;
 }
 .cuisines li a {
   text-decoration: none;
-  color: black;
+  color: $standard-text-color;
+}
+
+// Add Hover/Click for a
+
+@media only screen and (min-width: 500px) {
+  .cuisines ul {
+    max-width: 500px;
+  }
 }

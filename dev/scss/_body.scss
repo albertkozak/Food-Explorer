@@ -3,11 +3,11 @@
 body {
   background-image: url("../images/bg.jpg");
   background-repeat: repeat;
-  font-family:$font-condensed;
-  color: $brand-color;
 }
 
-.wrapper{
-  max-width: 940px;
-  margin:10px auto;
+//Default Button Style Flat
+button {
+  border: 0;
+  box-shadow: none;
+  border-radius: 0px;
 }
