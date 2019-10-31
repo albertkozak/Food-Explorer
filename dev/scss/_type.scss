@@ -13,3 +13,11 @@
 //     content: fa-content($fa-var-twitter);
 //   }
 // }
+
+body {
+  font-family: $font-regular;
+  font-weight: lighter;
+}
+h1, h2, h3 {
+  font-family: $font-regular;
+}

@@ -1,0 +1,41 @@
+// Sidebar Styles
+//Sidebar Containers
+section {
+  background-color: $sidebar-color1;
+  max-height: $sidebar-section-height;
+}
+//Sidebar Container Headers
+section h3 {
+  background-color: $brand-nav-color;
+  color: $sidebar-color1;
+  font-size: 2em;
+  text-transform: uppercase;
+}
+// Recipies Container
+.recipes div {
+  display: flex;
+}
+.recipes div:nth-child(odd) {
+  background-color: $sidebar-color1;
+}
+.recipes div:nth-child(even) {
+  background-color: $sidebar-color2;
+}
+// Cuisines Container
+.cuisines ul {
+  border: 1px red solid;
+  display: flex;
+  // flex-flow: column wrap;
+  flex-wrap: wrap;
+  max-height: $sidebar-section-height;
+}
+.cuisines li {
+  list-style: none;
+  margin-bottom: 10px;
+  flex: 0 0 140px;
+  border: 1px solid red;
+}
+.cuisines li a {
+  text-decoration: none;
+  color: black;
+}
