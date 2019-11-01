@@ -4,7 +4,7 @@ section {
   background-color: $sidebar-color1;
   margin: 10px 0;
   // max-height: $sidebar-section-height;
-  min-width: 280px;
+  // min-width: 280px;
 }
 
 //Sidebar Container Headers
@@ -60,5 +60,17 @@ section h3 {
 @media only screen and (min-width: 500px) {
   .cuisines ul {
     max-width: 500px;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  section {
+    background-color: $sidebar-color1;
+    margin: 0;
+    margin-bottom: 10px;
+  }
+  
+  .cuisines ul {
+    max-height: 100%;
   }
 }
