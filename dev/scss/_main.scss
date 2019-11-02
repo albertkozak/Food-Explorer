@@ -1,8 +1,16 @@
   // Media Queries
   @media only screen and (min-width: 800px) {
     main {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
+      display: grid;
+      grid-template-columns: auto 220px;
+    }
+
+    .sidebar {
+        grid-row: span 2;
+        margin-left: 10px;
+    }
+  
+    .post {
+        margin-top: 0;
     }
   }

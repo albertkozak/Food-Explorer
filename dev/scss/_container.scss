@@ -30,7 +30,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-// Post Container
+// Post/Bottom Container
 .post {
     background-color: $container-box-color;
     margin: 10px 0;
@@ -77,6 +77,7 @@
         justify-content: space-between;
         max-height: 240px;
     }
+
     .feature .left,
     .feature .right {
       width: 49.5%;
@@ -85,29 +86,7 @@
   }
 
   @media only screen and (min-width: 800px) {
-    .container {
-        width: 100%;
-        flex-basis: 74.5%;
-    }
-
-    .container .top {
-        order: 1;
-    }
-
-    .container .bottom {
-        order: 2;
-        margin-top: auto;
-        
-    }
-
-    .sidebar {
-        width: 100%;
-        flex-basis: 25%;
-        align-self: flex-end;
-        order: 3;
-    }
-
-    .posts-btn {
-        order: 4;
+    .post {
+        margin-top: 0;
     }
   }
