@@ -18,6 +18,10 @@ header {
   align-items: center;
 }
 
+.header-right{
+  color: $brand-nav-color;
+}
+
 .logo {
   margin: 0; 
   padding: 0;
@@ -110,6 +114,7 @@ form {
   right: 20px;
   top: 7px;
   border: none;
+  background-color: transparent;
 }
 
 .search-mobile1 {
@@ -129,6 +134,7 @@ form {
   flex-direction: row;
   justify-content: center;
   height: 50px;
+  color: $brand-nav-color;
 }
 
 .fab {
@@ -153,60 +159,6 @@ form {
 }
 
 // Media Styles
-
-@media only screen and (min-width: 980px){
-
-  .inner-header {
-    margin: 0 auto;
-    padding: 0 10px;
-  }
-  .inner-nav {
-    margin: 0 auto;
-  }
-}
-
-@media only screen and (min-width: 800px){
-
-  .search-desktop {
-    display: block;
-  }
-  .search-mobile1 {
-    display: none;
- } 
- 
- .inner-header .search-icon {
-   display: none;
- }
-
- .search1 {
-   display: none;
- }
-}
-
-@media only screen and (min-width: 700px) {
-
-  .header-right {
-    display: flex;
-  }
-  
-  .social{
-    display: block;
-    padding: 10px 0 0;
-  }
-
-  .search-mobile1{
-    display: flex;
-    position: relative;
-    top: 5px;
-  }
-
-  .social {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 40px;
-  }
-}
 
 @media only screen and (min-width: 600px) {
 
@@ -272,5 +224,61 @@ form {
     flex: 0;
     border-bottom: none;
     border-right: none;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+
+  .header-right {
+    display: flex;
+    color: $brand-nav-color;
+  };
+  
+  .social{
+    display: block;
+    padding: 10px 0 0;
+  }
+
+  .search-mobile1{
+    display: flex;
+    position: relative;
+    top: 5px;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 40px;
+  }
+}
+
+@media only screen and (min-width: 800px){
+
+  .search-mobile1 {
+    display: none;
+ } 
+
+  .search-desktop {
+    display: block;
+  }
+ 
+ .inner-header .search-icon {
+   display: none;
+ }
+
+ .search1 {
+   display: none;
+ }
+}
+
+@media only screen and (min-width: 980px){
+
+  .inner-header {
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  .inner-nav {
+    margin: 0 auto;
   }
 }
