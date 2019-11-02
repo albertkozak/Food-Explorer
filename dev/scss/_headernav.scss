@@ -10,7 +10,7 @@ header {
 
 .inner-header {
   height: 80px;
-  max-width: 940px;
+  max-width: 1100px;
   margin: 0 20px; 
   display: flex;
   flex-direction: row;
@@ -157,10 +157,11 @@ form {
 @media only screen and (min-width: 980px){
 
   .inner-header {
-    margin: 0 20px;
+    margin: 0 auto;
+    padding: 0 10px;
   }
   .inner-nav {
-    margin: 0 20px;
+    margin: 0 auto;
   }
 }
 
@@ -215,9 +216,9 @@ form {
   
   .inner-nav {
     height: 40px;
-    max-width: 940px;
+    max-width: 1100px;
     background-color:$brand-nav-color;    
-    margin: 0 20px;
+    margin: 0 auto;
   }
 
   .main-nav-open .inner-nav{
