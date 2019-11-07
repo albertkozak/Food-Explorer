@@ -1,29 +1,27 @@
 @charset "utf-8";
 
-// Place your Sass imports here...
+// SASS IMPORTS
 @import "../fontawesome/scss/fontawesome.scss";
 @import "../fontawesome/scss/solid.scss";
 @import "../fontawesome/scss/brands.scss";
 
-// Utility Imports
+// UTILITY IMPORTS
 @import 'variables';
-@import 'mixins';
 
-// Resets and Defaults
+// RESETS / DEFAULTS
 @import 'reset';
-@import 'type'; //Font-Styling
+@import 'type'; // FONT
 
-// HTML Partials
+// HTML PARTIALS
 @import 'body';
 @import 'headernav';
-@import 'hamburger';
 @import 'main';
 @import 'sidebar';
 @import 'footer';
 @import 'wrapper';
 @import 'container';
 
-// Icons
+// ICONS
 @import 'icons';
 
 

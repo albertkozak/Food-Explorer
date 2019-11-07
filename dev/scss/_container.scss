@@ -1,6 +1,6 @@
-// Main Container Styles
+// MAIN CONTAINER STYLES
 
-// Top Container
+// TOP CONTAINER
 .mussel-large {
     display: none;
 }
@@ -30,7 +30,7 @@
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-// Post/Bottom Container
+// POST/BOTTOM CONTAINER
 .post {
     background-color: $container-box-color;
     margin: 10px 0;
@@ -70,7 +70,7 @@
     padding: 10px 5px;
 }
 
-// Media Queries
+// MEDIA QUERIES
 @media only screen and (min-width: 700px) {
     .feature {
         display: flex;
