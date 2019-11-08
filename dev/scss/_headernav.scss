@@ -135,6 +135,61 @@ form {
   justify-content: center;
   height: 50px;
   color: $brand-nav-color;
+  overflow: hidden;
+}
+
+.social-mobile .fa-facebook-f::after {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f39e";
+  color: #999999;
+}
+
+.social-mobile .fa-facebook-f:before,
+.social-mobile .fa-facebook-f:after {
+  display: block;
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+
+.social-mobile .fa-facebook-f:hover:before,
+.social-mobile .fa-facebook-f:hover:after {
+  transform: translate(0, -100%);
+}
+
+.social-mobile .fa-google::after {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f1a0";
+  color: #999999;
+}
+
+.social-mobile .fa-google:before,
+.social-mobile .fa-google:after {
+  display: block;
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+
+.social-mobile .fa-google:hover:before,
+.social-mobile .fa-google:hover:after {
+  transform: translate(0, -100%);
+}
+
+.social-mobile .fa-twitter::after {
+  font-family: "Font Awesome 5 Brands";
+  content: "\f099";
+  color: #999999;
+}
+
+.social-mobile .fa-twitter:before,
+.social-mobile .fa-twitter:after {
+  display: block;
+  cursor: pointer;
+  transition: transform 200ms ease;
+}
+
+.social-mobile .fa-twitter:hover:before,
+.social-mobile .fa-twitter:hover:after {
+  transform: translate(0, -100%);
 }
 
 .fab {
@@ -250,6 +305,17 @@ form {
     flex-direction: row;
     justify-content: center;
     height: 40px;
+  }
+
+  .social .fab {
+    transition: 0.3s;
+  }
+
+  .social .facebook:hover,
+  .social .google:hover,
+  .social .twitter:hover {
+    color: $social-hover-color;
+    cursor: pointer;
   }
 }
 
