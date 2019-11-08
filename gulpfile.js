@@ -60,7 +60,7 @@ folders.jQuery     = 'jquery';
 folders.jsDev      = `${folders.dev}/${folders.scripts}`;
 folders.jsDist     = `${folders.dist}/${folders.scripts}`;
 folders.libsDev    = `${folders.jsDev}/${folders.libs}`;
-folders.libsDist   = `${folders.jsDistFolder}/${folders.libs}`; 
+folders.libsDist   = `${folders.jsDist}/${folders.libs}`; 
 // jQuery Folders
 folders.jQueryDev  = `${folders.libsDev}/${folders.jQuery}`;
 folders.jQueryDist = `${folders.libsDist}/${folders.jQuery}`;
@@ -150,7 +150,7 @@ function htmlTask(){
 function imagesTask(){
   return src(files.images)
 		.pipe(cache(imageMin({interlaced: true}))) // Compresses images
-		.pipe(dest(folders.imagesDistFolder)); // Copies compressed images to the dist images folder
+		.pipe(dest(folders.imagesDist)); // Copies compressed images to the dist images folder
 }
 
 // Fonts Task:
