@@ -55,7 +55,7 @@
 }
 
 .button-post {
-    margin: 10px 0;
+    margin: 15px 0;
     text-align: right;
 }
 
@@ -68,6 +68,12 @@
     font-weight: bold;
     font-size: 1em;
     padding: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.button-post button:hover {
+    background-color: $brand-color;
 }
 
 // MEDIA QUERIES

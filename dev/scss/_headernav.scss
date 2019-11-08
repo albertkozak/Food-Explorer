@@ -138,59 +138,47 @@ form {
   overflow: hidden;
 }
 
+.facebook,
+.google,
+.twitter {
+  cursor: pointer;
+}
+
+// START Mobile HOVER Animations 
 .social-mobile .fa-facebook-f::after {
-  font-family: "Font Awesome 5 Brands";
   content: "\f39e";
-  color: #999999;
+  color: $social-hover-color;
+}
+
+.social-mobile .fa-google::after {
+  content: "\f1a0";
+  color: $social-hover-color;
+}
+
+.social-mobile .fa-twitter::after {
+  content: "\f099";
+  color: $social-hover-color;
 }
 
 .social-mobile .fa-facebook-f:before,
-.social-mobile .fa-facebook-f:after {
+.social-mobile .fa-facebook-f:after,
+.social-mobile .fa-google:before,
+.social-mobile .fa-google:after,
+.social-mobile .fa-twitter:before,
+.social-mobile .fa-twitter:after {
   display: block;
-  cursor: pointer;
   transition: transform 200ms ease;
 }
 
 .social-mobile .fa-facebook-f:hover:before,
-.social-mobile .fa-facebook-f:hover:after {
-  transform: translate(0, -100%);
-}
-
-.social-mobile .fa-google::after {
-  font-family: "Font Awesome 5 Brands";
-  content: "\f1a0";
-  color: #999999;
-}
-
-.social-mobile .fa-google:before,
-.social-mobile .fa-google:after {
-  display: block;
-  cursor: pointer;
-  transition: transform 200ms ease;
-}
-
+.social-mobile .fa-facebook-f:hover:after,
 .social-mobile .fa-google:hover:before,
-.social-mobile .fa-google:hover:after {
-  transform: translate(0, -100%);
-}
-
-.social-mobile .fa-twitter::after {
-  font-family: "Font Awesome 5 Brands";
-  content: "\f099";
-  color: #999999;
-}
-
-.social-mobile .fa-twitter:before,
-.social-mobile .fa-twitter:after {
-  display: block;
-  cursor: pointer;
-  transition: transform 200ms ease;
-}
-
+.social-mobile .fa-google:hover:after,
 .social-mobile .fa-twitter:hover:before,
 .social-mobile .fa-twitter:hover:after {
   transform: translate(0, -100%);
 }
+//END Mobile HOVER Animations
 
 .fab {
   font-size: 1.5rem;
@@ -315,7 +303,6 @@ form {
   .social .google:hover,
   .social .twitter:hover {
     color: $social-hover-color;
-    cursor: pointer;
   }
 }
 
